@@ -13,7 +13,6 @@ const Logo = () => {
     const solidLogoRef = useRef();
 
     useEffect(() => {
-        console.log(outlineOne.current)
         gsap.registerPlugin(DrawSVGPlugin)
 
         gsap.timeline({ repeatRefresh: true }).to(bgRef.current, {
